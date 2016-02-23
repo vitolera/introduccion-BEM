@@ -13,6 +13,7 @@ El problema se centra en la termoelasticidad desacoplada, es decir, la incidenci
 \begin{equation}
  \varepsilon =\varepsilon^{T} +\varepsilon^{E}
  \end{equation}
+ \label{hookecalor}
 \subsection{El problema térmico}
 La ecuación de conducción del calor en un medio tridimensional, isótropo, en estado transitorio y con fuentes de calor interno se define por:
 \begin{equation}
@@ -31,4 +32,13 @@ A su vez también podemos escribir la ecuación de expansión del material debid
 0 & 0 & \alpha T \end{array} \right)
 \end{equation}
 Donde $\alpha$ representa el coeficiente de dilatación térmica.
+\subsection{El problema elástico}
+En cuanto al problema elástico sus ecuaciones de equilibrio $\nabla \sigma +b =0$ y su ecuación constitutiva $\sigma_{ij}=\lambda \delta_{ij} \varepsilon_{v} + 2 \mu \varepsilon_{ij}$.
+\subsection{El problema termoelástico}
+Para admitir la formulación del problema termoelástico desacoplado es necesario partir de unas hipótesis: \begin{itemize}
+\item Deformaciones pequeñas
+\item Incrementos de temperatura pequeños
+\item Ecuaciones constitutivas lineales
+\end{itemize}
+De esta manera podremos asumir la Ley de Hooke Generalizada con efectos térmicos mencionada en [\ref{hookecalor}].
 \end{document}
