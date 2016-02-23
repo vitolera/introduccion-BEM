@@ -9,8 +9,26 @@
 \begin{document}
 \maketitle
 \section{Planteamiento del problema}
-El problema se centra en la termoelasticidad desacoplada, es decir, la incidencia del efecto térmico en el problema elástico y no viceversa.//
- $\psilon =\epsilon^{T} +\epsilon^{E}$
+El problema se centra en la termoelasticidad desacoplada, es decir, la incidencia del efecto térmico en el problema elástico y no viceversa. \\
+\begin{equation}
+ \varepsilon =\varepsilon^{T} +\varepsilon^{E}
+ \end{equation}
 \subsection{El problema térmico}
-
+La ecuación de conducción del calor en un medio tridimensional, isótropo, en estado transitorio y con fuentes de calor interno se define por:
+\begin{equation}
+\frac{\partial{T}}{\partial{t}}=\frac{\lambda}{\rho c} \nabla^{2} T + \frac{q_{v}}{\rho c}
+\end{equation}
+donde T representa el incremento de temperatura respecto a un estado $T_{0}$, $\rho$ es la densidad del material, c es el calor específico, $\lambda$ es la conductividad térmica y $q_{v}$ el flujo de calor interno.
+Para el caso de no tener fuentes de calor internas eliminaremos el segundo término, y para el problema estacionario $\frac{\partial{T}}{\partial{t}}=0$ por lo que nos quedará que la ecuación de transmisión de calor para el estado estacionario, sin fuentes de calor internas en un medio isótropo tridimensional homogéneo es:
+\begin{equation}
+\nabla^{2}T=0= \frac{\partial^{2}T}{\partial{x_1^{2}}} +\frac{\partial^{2}T}{\partial{x_2^{2}}} +\frac{\partial^{2}T}{\partial{x_3^{2}}}
+\end{equation}
+A su vez también podemos escribir la ecuación de expansión del material debido a la dilatación térmica como:
+\begin{equation}
+\varepsilon^{T}_{ij}=\alpha T \delta_{ij}= \left( \begin{array}{ccc}
+\alpha T & 0 & 0 \\
+0 & \alpha T & 0\\
+0 & 0 & \alpha T \end{array} \right)
+\end{equation}
+Donde $\alpha$ representa el coeficiente de dilatación térmica.
 \end{document}
